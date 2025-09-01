@@ -1,0 +1,62 @@
+body {
+    font-family: 'Sansation', sans-serif;
+  }
+
+  /*For Navigation*/
+  .navbar-brand,
+  .nav-link {
+    color: #fff !important;
+  }
+
+  .navbar-crabfarm {
+    background-color: #004aad;
+  }
+
+  /*For Hero*/
+  .hero {
+    background: linear-gradient(rgba(0,74,173,0.8), rgba(0,74,173,0.8)),
+      url("../images/herobg.webp") center/cover no-repeat;
+    color: #fff;
+    padding: 6rem 1rem;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .contact-section {
+    padding: 4rem 1rem;
+  }
+
+  .icon-img {
+    width: 30px;
+    height: 30px;
+  } 
+
+  .contact-info .icon {
+    font-size: 2rem;
+    color: #004aad;
+    margin-bottom: 0.5rem;
+  }
+
+  .contact-form .form-control {
+    border-radius: 0.5rem;
+  }
+
+  .contact-form button {
+    background-color: #004aad;
+    border: none;
+  }
+  .contact-form button:hover {
+    background-color: #003a89;
+  }
+
+  /*For Footer*/
+  footer {
+    background: #004aad;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+  }
