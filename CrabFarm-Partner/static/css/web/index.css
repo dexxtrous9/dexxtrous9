@@ -16,7 +16,7 @@ body {
 /*For Hero*/
 .hero {
   background: linear-gradient(rgba(0, 74, 173, 0.7), rgba(0, 74, 173, 0.7)),
-    url("/images/herobg.webp") center/cover no-repeat;
+    url("/static/images/herobg.webp") center/cover no-repeat;
   color: #fff;
   height: 100vh;
   display: flex;

@@ -15,10 +15,39 @@ body {
   /*For Hero*/
   .hero {
     background: linear-gradient(rgba(0,74,173,0.8), rgba(0,74,173,0.8)),
-      url("../images/herobg.webp") center/cover no-repeat;
+      url("/static/images/herobg.webp") center/cover no-repeat;
     color: #fff;
     padding: 6rem 1rem;
     text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+  
+    white-space: nowrap; /* keep in one line */ 
+    overflow: hidden; /* hide the text until animated */
+    border-right: 3px solid #004aad; /* blinking cursor */
+    width: 0;   /* start with 0 width */
+    animation: typing 3s steps(30, end) forwards, blink 0.75s step-end infinite;
+  }
+  
+  /* Typing animation */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  
+    to {
+      width: 100%;
+    }
+  }
+  
+  /* Cursor blink */
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
   }
 
   .hero h1 {
