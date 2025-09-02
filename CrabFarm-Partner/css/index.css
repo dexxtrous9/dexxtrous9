@@ -1,64 +1,88 @@
 body {
-    font-family: 'Sansation', sans-serif;
-  }
+  font-family: 'Sansation', sans-serif;
+}
 
-  /*For Navigation*/
-  .navbar-brand,
-  .nav-link {
-    color: #fff !important;
-  }
+/*For Navigation*/
+.navbar-brand,
+.nav-link {
+  color: #fff !important;
+}
 
-  .navbar-crabfarm {
-    background-color: #004aad;
-  }
+.navbar-crabfarm {
+  background-color: #004aad;
+}
 
 
 /*For Hero*/
-  .hero {
-    background: linear-gradient(rgba(0, 74, 173, 0.7), rgba(0, 74, 173, 0.7)),
+.hero {
+  background: linear-gradient(rgba(0, 74, 173, 0.7), rgba(0, 74, 173, 0.7)),
     url("/images/herobg.webp") center/cover no-repeat;
-    color: #fff;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    text-align: center;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+
+  white-space: nowrap; /* keep in one line */ 
+  overflow: hidden; /* hide the text until animated */
+  border-right: 3px solid #004aad; /* blinking cursor */
+  width: 0;   /* start with 0 width */
+  animation: typing 3s steps(30, end) forwards, blink 0.75s step-end infinite;
+}
+
+/* Typing animation */
+@keyframes typing {
+  from {
+    width: 0;
   }
 
-  .hero h1 {
-    font-size: 3rem;
-    font-weight: 700;
+  to {
+    width: 100%;
   }
+}
 
-  .hero p {
-    font-size: 1.25rem;
-    margin-bottom: 1.5rem;
+/* Cursor blink */
+@keyframes blink {
+  50% {
+    border-color: transparent;
   }
+}
 
-  .btn-primary {
-    background-color: #3267ae;
-    border-color: #3267ae;
-  }
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
 
-  .btn-primary:hover {
-    background-color: #003a89;
-    border-color: #003a89;
-  }
+.btn-primary {
+  background-color: #487cc1;
+  border-color: #3267ae;
+}
 
-  .icon-img {
-    width: 60px;
-    height: 60px;
-  } 
+.btn-primary:hover {
+  background-color: #003a89;
+  border-color: #003a89;
+}
 
-  .features .icon {
-    font-size: 3rem;
-    color: #004aad;
-  }
+.icon-img {
+  width: 60px;
+  height: 60px;
+}
+
+.features .icon {
+  font-size: 3rem;
+  color: #004aad;
+}
 
 
 /*For footer*/
-  footer {
-    background: #004aad;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-  }
+footer {
+  background: #004aad;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
