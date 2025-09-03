@@ -2,6 +2,7 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
+#THIS IS HOME ROUTE AND OTHER PAGE
 @app.route("/")
 def home():
     return render_template("web/index.html", content="Your Partner", css_file="css/web/index.css")
@@ -18,6 +19,7 @@ def contact():
 def demo():
     return render_template("web/about.html", content="Demo")
 
+#THIS IS FOR LOGIN AND SIGN UP
 @app.route("/auth/login")
 def login():
     return render_template("auth/login.html", content="Login", css_file="css/auth/login.css")

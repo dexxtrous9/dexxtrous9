@@ -1,91 +1,102 @@
+:root {
+  --crab-primary: #20c997;
+  --crab-primary-dark: #179d77;
+  --crab-primary-light: #4ce3b5;
+
+  --crab-secondary: #6f42c1;
+  --crab-secondary-dark: #5633a4;
+}
+
 body {
-    font-family: 'Sansation', sans-serif;
+  font-family: 'Sansation', sans-serif;
+}
+
+/*For Navigation*/
+.navbar-brand,
+.nav-link {
+  color: #fff !important;
+}
+
+.navbar-crabfarm {
+  background-color: var(--crab-primary-dark);
+}
+
+/*For Hero*/
+.hero {
+  background: linear-gradient(rgba(32, 201, 151, 0.8), rgba(32, 201, 151, 0.8)),
+    url("/static/images/herobg.webp") center/cover no-repeat;
+  color: #fff;
+  padding: 6rem 1rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+
+  white-space: nowrap; /* keep in one line */ 
+  overflow: hidden; /* hide the text until animated */
+  border-right: 3px solid var(--crab-primary); /* blinking cursor */
+  width: 0;   /* start with 0 width */
+  animation: typing 3s steps(30, end) forwards, blink 0.75s step-end infinite;
+}
+
+/* Typing animation */
+@keyframes typing {
+  from {
+    width: 0;
   }
 
-  /*For Navigation*/
-  .navbar-brand,
-  .nav-link {
-    color: #fff !important;
+  to {
+    width: 100%;
   }
+}
 
-  .navbar-crabfarm {
-    background-color: #004aad;
+/* Cursor blink */
+@keyframes blink {
+  50% {
+    border-color: transparent;
   }
+}
 
-  /*For Hero*/
-  .hero {
-    background: linear-gradient(rgba(0,74,173,0.8), rgba(0,74,173,0.8)),
-      url("/static/images/herobg.webp") center/cover no-repeat;
-    color: #fff;
-    padding: 6rem 1rem;
-    text-align: center;
-  }
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
 
-  .hero h1 {
-    font-size: 3rem;
-    font-weight: 700;
-  
-    white-space: nowrap; /* keep in one line */ 
-    overflow: hidden; /* hide the text until animated */
-    border-right: 3px solid #004aad; /* blinking cursor */
-    width: 0;   /* start with 0 width */
-    animation: typing 3s steps(30, end) forwards, blink 0.75s step-end infinite;
-  }
-  
-  /* Typing animation */
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-  
-    to {
-      width: 100%;
-    }
-  }
-  
-  /* Cursor blink */
-  @keyframes blink {
-    50% {
-      border-color: transparent;
-    }
-  }
+.contact-section {
+  padding: 4rem 1rem;
+}
 
-  .hero h1 {
-    font-size: 3rem;
-    font-weight: bold;
-  }
+.icon-img {
+  width: 30px;
+  height: 30px;
+}
 
-  .contact-section {
-    padding: 4rem 1rem;
-  }
+.contact-info .icon {
+  font-size: 2rem;
+  color: var(--crab-primary);
+  margin-bottom: 0.5rem;
+}
 
-  .icon-img {
-    width: 30px;
-    height: 30px;
-  } 
+.contact-form .form-control {
+  border-radius: 0.5rem;
+}
 
-  .contact-info .icon {
-    font-size: 2rem;
-    color: #004aad;
-    margin-bottom: 0.5rem;
-  }
+.contact-form button {
+  background-color: var(--crab-secondary);
+  border: none;
+  color: #fff;
+}
 
-  .contact-form .form-control {
-    border-radius: 0.5rem;
-  }
+.contact-form button:hover {
+  background-color: var(--crab-secondary-dark);
+}
 
-  .contact-form button {
-    background-color: #004aad;
-    border: none;
-  }
-  .contact-form button:hover {
-    background-color: #003a89;
-  }
-
-  /*For Footer*/
-  footer {
-    background: #004aad;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-  }
+/*For Footer*/
+footer {
+  background: var(--crab-primary-dark);
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}

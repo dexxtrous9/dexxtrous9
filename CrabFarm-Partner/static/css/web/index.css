@@ -1,3 +1,13 @@
+:root {
+  --crab-primary: #20c997;
+  --crab-primary-dark: #179d77;
+  --crab-primary-light: #4ce3b5;
+
+  --crab-secondary: #6f42c1;
+  --crab-secondary-dark: #5633a4;
+  --crab-secondary-light: #8e65d4;
+}
+
 body {
   font-family: 'Sansation', sans-serif;
 }
@@ -9,13 +19,12 @@ body {
 }
 
 .navbar-crabfarm {
-  background-color: #004aad;
+  background-color: var(--crab-primary-dark);
 }
-
 
 /*For Hero*/
 .hero {
-  background: linear-gradient(rgba(0, 74, 173, 0.7), rgba(0, 74, 173, 0.7)),
+  background: linear-gradient(rgba(32, 201, 150, 0.51), rgba(32, 201, 150, 0.416)),
     url("/static/images/herobg.webp") center/cover no-repeat;
   color: #fff;
   height: 100vh;
@@ -30,7 +39,7 @@ body {
 
   white-space: nowrap; /* keep in one line */ 
   overflow: hidden; /* hide the text until animated */
-  border-right: 3px solid #004aad; /* blinking cursor */
+  border-right: 3px solid var(--crab-primary); /* blinking cursor */
   width: 0;   /* start with 0 width */
   animation: typing 3s steps(30, end) forwards, blink 0.75s step-end infinite;
 }
@@ -59,13 +68,13 @@ body {
 }
 
 .btn-primary {
-  background-color: #487cc1;
-  border-color: #3267ae;
+  background-color: var(--crab-secondary);
+  border-color: var(--crab-secondary);
 }
 
 .btn-primary:hover {
-  background-color: #003a89;
-  border-color: #003a89;
+  background-color: var(--crab-secondary-dark);
+  border-color: var(--crab-secondary-dark);
 }
 
 .icon-img {
@@ -75,13 +84,12 @@ body {
 
 .features .icon {
   font-size: 3rem;
-  color: #004aad;
+  color: var(--crab-primary);
 }
-
 
 /*For footer*/
 footer {
-  background: #004aad;
+  background: var(--crab-primary-dark);
   color: #fff;
   text-align: center;
   padding: 1rem 0;

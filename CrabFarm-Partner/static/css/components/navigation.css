@@ -1,0 +1,15 @@
+:root {
+    --crab-secondary: #6f42c1;
+    --crab-secondary-dark: #5633a4;
+}   
+
+.btn-info {
+    background-color: var(--crab-secondary) !important;
+    border-color: var(--crab-secondary) !important;
+    color: #fff !important;
+}
+
+.btn-info:hover {
+    background-color: var(--crab-secondary-dark) !important;
+    border-color: var(--crab-secondary-dark) !important;
+}
