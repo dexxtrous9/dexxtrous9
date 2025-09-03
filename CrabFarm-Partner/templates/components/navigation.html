@@ -11,8 +11,8 @@
           <a class="nav-link" href="{{ url_for('about') }}">About</a>
           <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
           <a class="nav-link" href="{{ url_for('demo') }}">Demo</a>
-          <a href="/auth/login.html" class="btn btn-outline-light ms-lg-2">Login</a>
-          <a href="/auth/signup.html" class="btn btn-info text-white ms-lg-2">Sign Up</a>
+          <a href="{{ url_for('login') }}" class="btn btn-outline-light ms-lg-2">Login</a>
+          <a href="{{ url_for('signup') }}" class="btn btn-info text-white ms-lg-2">Sign Up</a>
         </div>
       </div>
     </div>

@@ -16,7 +16,7 @@ body {
 .login-section {
   min-height: 100vh;
   background: linear-gradient(rgba(0, 74, 173, 0.7), rgba(0, 74, 173, 0.7)),
-    url('../images/herobg.webp') center/cover no-repeat;
+    url('/static/images/herobg.webp') center/cover no-repeat;
   padding: 40px 20px;
 }
 

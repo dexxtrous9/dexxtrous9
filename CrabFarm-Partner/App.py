@@ -18,6 +18,14 @@ def contact():
 def demo():
     return render_template("web/about.html", content="Demo")
 
+@app.route("/auth/login")
+def login():
+    return render_template("auth/login.html", content="Login", css_file="css/auth/login.css")
+
+@app.route("/auth/signup")
+def signup():
+    return render_template("auth/signup.html", content="Sign-Up", css_file="css/auth/signup.css")
+
 
 if __name__ == "__main__":
     app.run(debug=True)
