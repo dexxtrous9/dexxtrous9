@@ -5,27 +5,33 @@
 
   --crab-secondary: #6f42c1;
   --crab-secondary-dark: #5633a4;
+
+  --crab-danger: #dc3545;
+  --crab-warning: #ffc107;
+  --crab-info: #0dcaf0;
 }
 
 body {
   font-family: 'Sansation', sans-serif;
+  background-color: #0d1117;
+  color: #e6edf3;
 }
 
 /*For Navigation*/
 .navbar-brand,
 .nav-link {
-  color: #fff !important;
+  color: #e6edf3 !important;
 }
 
 .navbar-crabfarm {
-  background-color: var(--crab-primary-dark);
+  background-color: #161b22;
 }
 
 /*For Hero*/
 .hero {
-  background: linear-gradient(rgba(32, 201, 151, 0.8), rgba(32, 201, 151, 0.8)),
+  background: linear-gradient(rgba(13, 17, 23, 0.9), rgba(13, 17, 23, 0.9)),
     url("/static/images/herobg.webp") center/cover no-repeat;
-  color: #fff;
+  color: #e6edf3;
   padding: 6rem 1rem;
   text-align: center;
 }
@@ -33,35 +39,26 @@ body {
 .hero h1 {
   font-size: 3rem;
   font-weight: 700;
-
-  white-space: nowrap; /* keep in one line */ 
-  overflow: hidden; /* hide the text until animated */
-  border-right: 3px solid var(--crab-primary); /* blinking cursor */
-  width: 0;   /* start with 0 width */
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid var(--crab-primary);
+  width: 0;
   animation: typing 3s steps(30, end) forwards, blink 0.75s step-end infinite;
 }
 
-/* Typing animation */
 @keyframes typing {
   from {
     width: 0;
   }
-
   to {
     width: 100%;
   }
 }
 
-/* Cursor blink */
 @keyframes blink {
   50% {
     border-color: transparent;
   }
-}
-
-.hero h1 {
-  font-size: 3rem;
-  font-weight: bold;
 }
 
 .contact-section {
@@ -81,12 +78,21 @@ body {
 
 .contact-form .form-control {
   border-radius: 0.5rem;
+  background: #21262d;
+  border: 1px solid #30363d;
+  color: #e6edf3;
+}
+
+.contact-form .form-control:focus {
+  border-color: var(--crab-primary);
+  box-shadow: 0 0 0 0.2rem rgba(32, 201, 151, 0.25);
 }
 
 .contact-form button {
   background-color: var(--crab-secondary);
   border: none;
   color: #fff;
+  transition: background-color 0.3s ease;
 }
 
 .contact-form button:hover {
@@ -95,8 +101,8 @@ body {
 
 /*For Footer*/
 footer {
-  background: var(--crab-primary-dark);
-  color: #fff;
+  background: #161b22;
+  color: #e6edf3;
   text-align: center;
   padding: 1rem 0;
 }

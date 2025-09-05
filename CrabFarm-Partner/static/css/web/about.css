@@ -2,27 +2,37 @@
   --crab-primary: #20c997;
   --crab-primary-dark: #179d77;
   --crab-primary-light: #4ce3b5;
+
+  --crab-secondary: #6f42c1;
+  --crab-secondary-dark: #5633a4;
+  --crab-secondary-light: #8e65d4;
+
+  --crab-danger: #dc3545;
+  --crab-warning: #ffc107;
+  --crab-info: #0dcaf0;
 }
 
 body {
   font-family: 'Sansation', sans-serif;
+  background-color: #0d1117;
+  color: #e6edf3;
 }
 
 /*For Navigation*/
 .navbar-brand,
 .nav-link {
-  color: #fff !important;
+  color: #e6edf3 !important;
 }
 
 .navbar-crabfarm {
-  background-color: var(--crab-primary-dark);
+  background-color: #161b22;
 }
 
 /*For Hero*/
 .hero {
-  background: linear-gradient(rgba(32, 201, 151, 0.8), rgba(32, 201, 151, 0.8)),
+  background: linear-gradient(rgba(13, 17, 23, 0.9), rgba(13, 17, 23, 0.9)),
     url("/static/images/herobg.webp") center/cover no-repeat;
-  color: #fff;
+  color: #e6edf3;
   padding: 6rem 1rem;
   text-align: center;
 }
@@ -31,25 +41,22 @@ body {
   font-size: 3rem;
   font-weight: 700;
 
-  white-space: nowrap; /* keep in one line */ 
-  overflow: hidden; /* hide the text until animated */
-  border-right: 3px solid var(--crab-primary); /* blinking cursor */
-  width: 0;   /* start with 0 width */
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid var(--crab-primary);
+  width: 0;
   animation: typing 3s steps(30, end) forwards, blink 0.75s step-end infinite;
 }
 
-/* Typing animation */
 @keyframes typing {
   from {
     width: 0;
   }
-
   to {
     width: 100%;
   }
 }
 
-/* Cursor blink */
 @keyframes blink {
   50% {
     border-color: transparent;
@@ -58,6 +65,7 @@ body {
 
 .col-md-6 h2 {
   font-size: 3rem;
+  color: var(--crab-primary);
 }
 
 .about-section {
@@ -66,28 +74,32 @@ body {
 
 .about-section img {
   border-radius: 1rem;
+  border: 2px solid #30363d; /* subtle border for dark mode */
 }
 
 .values {
-  background: #f8f9fa;
+  background: #161b22;
   padding: 4rem 1rem;
 }
 
 .values .card {
-  border: none;
+  background: #21262d;
+  color: #e6edf3;
+  border: 1px solid #30363d;
   border-radius: 1rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 .values .card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.6);
 }
 
 /*For Footer*/
 footer {
-  background: var(--crab-primary-dark);
-  color: #fff;
+  background: #161b22;
+  color: #e6edf3;
   text-align: center;
   padding: 1rem 0;
 }

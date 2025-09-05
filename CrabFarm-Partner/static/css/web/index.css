@@ -6,27 +6,33 @@
   --crab-secondary: #6f42c1;
   --crab-secondary-dark: #5633a4;
   --crab-secondary-light: #8e65d4;
+
+  --crab-danger: #dc3545;
+  --crab-warning: #ffc107;
+  --crab-info: #0dcaf0;
 }
 
 body {
   font-family: 'Sansation', sans-serif;
+  background-color: #0d1117;
+  color: #e6edf3; /* softer white for modern dark mode */
 }
 
 /*For Navigation*/
 .navbar-brand,
 .nav-link {
-  color: #fff !important;
+  color: #e6edf3 !important;
 }
 
 .navbar-crabfarm {
-  background-color: var(--crab-primary-dark);
+  background-color: #161b22; /* darker than body for contrast */
 }
 
 /*For Hero*/
 .hero {
-  background: linear-gradient(rgba(32, 201, 150, 0.51), rgba(32, 201, 150, 0.416)),
+  background: linear-gradient(rgba(13, 17, 23, 0.9), rgba(13, 17, 23, 0.9)),
     url("/static/images/herobg.webp") center/cover no-repeat;
-  color: #fff;
+  color: #e6edf3;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -37,25 +43,22 @@ body {
   font-size: 3rem;
   font-weight: 700;
 
-  white-space: nowrap; /* keep in one line */ 
-  overflow: hidden; /* hide the text until animated */
-  border-right: 3px solid var(--crab-primary); /* blinking cursor */
-  width: 0;   /* start with 0 width */
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid var(--crab-primary);
+  width: 0;
   animation: typing 3s steps(30, end) forwards, blink 0.75s step-end infinite;
 }
 
-/* Typing animation */
 @keyframes typing {
   from {
     width: 0;
   }
-
   to {
     width: 100%;
   }
 }
 
-/* Cursor blink */
 @keyframes blink {
   50% {
     border-color: transparent;
@@ -65,11 +68,14 @@ body {
 .hero p {
   font-size: 1.25rem;
   margin-bottom: 1.5rem;
+  color: #adb5bd; /* softer gray for subtext */
 }
 
+/* Buttons */
 .btn-primary {
   background-color: var(--crab-secondary);
   border-color: var(--crab-secondary);
+  color: #fff;
 }
 
 .btn-primary:hover {
@@ -77,6 +83,7 @@ body {
   border-color: var(--crab-secondary-dark);
 }
 
+/* Features */
 .icon-img {
   width: 60px;
   height: 60px;
@@ -89,8 +96,8 @@ body {
 
 /*For footer*/
 footer {
-  background: var(--crab-primary-dark);
-  color: #fff;
+  background: #161b22;
+  color: #e6edf3;
   text-align: center;
   padding: 1rem 0;
 }
