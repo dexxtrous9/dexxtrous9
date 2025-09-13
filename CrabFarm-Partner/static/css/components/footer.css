@@ -1,0 +1,33 @@
+/* Footer Styling */
+.footer {
+  background: linear-gradient(135deg, #0d1117, #161b22);
+  color: #e6edf3;
+  font-family: 'Sansation', sans-serif;
+}
+
+.footer h5,
+.footer h6 {
+  color: #20c997; 
+}
+
+.footer-link {
+  color: #e6edf3;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-link:hover {
+  color: #20c997;
+}
+
+/* Social media icons */
+.social-link {
+  font-size: 1.3rem;
+  color: #e6edf3;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.social-link:hover {
+  color: #20c997;
+  transform: scale(1.2);
+}

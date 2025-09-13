@@ -99,10 +99,4 @@ body {
   background-color: var(--crab-secondary-dark);
 }
 
-/*For Footer*/
-footer {
-  background: #161b22;
-  color: #e6edf3;
-  text-align: center;
-  padding: 1rem 0;
-}
+

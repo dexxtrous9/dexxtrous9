@@ -8,13 +8,15 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
-    <title>{{content}} - CrabFarm</title>
+
+    <title>{{content}} - CrabFarm Haven</title>
     
     {% if css_file %}
     <link rel="stylesheet" href="{{ url_for('static', filename=css_file) }}">
   {% endif %}
   <link rel="stylesheet" href="{{ url_for('static', filename='css/components/navigation.css') }}">
-
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/components/footer.css') }}">
 
 </head>

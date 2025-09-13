@@ -93,11 +93,3 @@ body {
   font-size: 3rem;
   color: var(--crab-primary);
 }
-
-/*For footer*/
-footer {
-  background: #161b22;
-  color: #e6edf3;
-  text-align: center;
-  padding: 1rem 0;
-}
