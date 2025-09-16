@@ -17,7 +17,7 @@ def contact():
 
 @app.route("/demo")
 def demo():
-    return render_template("web/about.html", content="Demo")
+    return render_template("web/demo.html", content="Demo", css_file="css/web/demo.css")
 
 #THIS IS FOR LOGIN AND SIGN UP
 @app.route("/auth/login")
